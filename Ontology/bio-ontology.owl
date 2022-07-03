@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<rdf:RDF xml:base="file:C:/Users/Supun/PycharmProjects/Tagger2/Ontology/bio-ontology.owl"
+         xmlns="file:C:/Users/Supun/PycharmProjects/Tagger2/Ontology/bio-ontology.owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<owl:Class rdf:about="#සෛල වාදය">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සංකල්පයකි"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සංකල්පයකි"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#සංකල්පයකි">
+  <rdfs:domain rdf:resource="#සෛල වාදය"/>
+  <rdfs:range rdf:resource="#සෛල"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#සෛල">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පිහිටා ඇත"/>
+      <owl:allValuesFrom rdf:resource="#රයිබොසෝම"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පිහිටා ඇත"/>
+      <owl:allValuesFrom rdf:resource="#රයිබොසෝම"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#පිහිටා ඇත">
+  <rdfs:domain rdf:resource="#සෛල"/>
+  <rdfs:range rdf:resource="#රයිබොසෝම"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#රයිබොසෝම">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ජීවය">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සෑදී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#සෛල"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සෑදී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සෑදී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#සෑදී ඇත">
+  <rdfs:domain rdf:resource="#ජීවය"/>
+  <rdfs:range rdf:resource="#සෛල"/>
+  <rdfs:domain rdf:resource="#න්‍යෂ්ටිය"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#වර්ගයකි">
+  <rdfs:domain rdf:resource="#රළු අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:range rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:domain rdf:resource="#සිනිඳු අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:domain rdf:resource="#ජීවය"/>
+  <rdfs:range rdf:resource="#සෛල"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#න්‍යෂ්ටිය">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සෑදී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සමන්විත වෙයි"/>
+      <owl:allValuesFrom rdf:resource="#ක්‍රොමැටින් ද්‍රව්‍ය"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සෑදී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#සෛල"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සමන්විත වෙයි"/>
+      <owl:allValuesFrom rdf:resource="#ක්‍රොමැටින් ද්‍රව්‍ය"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#සමන්විත වෙයි"/>
+      <owl:allValuesFrom rdf:resource="#ක්‍රොමැටින් ද්‍රව්‍ය"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#රළු අන්තඃප්ලාස්මීය ජාලිකා">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පරිවහනය සිදුකරයි"/>
+      <owl:allValuesFrom rdf:resource="#ප්‍රෝටීන"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පෘෂ්ඨයට ඇලී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#රයිබොසෝම"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පරිවහනය සිදුකරයි"/>
+      <owl:allValuesFrom rdf:resource="#ප්‍රෝටීන"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පරිවහනය සිදුකරයි"/>
+      <owl:allValuesFrom rdf:resource="#ප්‍රෝටීන"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පරිවහනය සිදුකරයි"/>
+      <owl:allValuesFrom rdf:resource="#ප්‍රෝටීන"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පෘෂ්ඨයට ඇලී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#රයිබොසෝම"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පෘෂ්ඨයට ඇලී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#රයිබොසෝම"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පෘෂ්ඨයට ඇලී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#රයිබොසෝම"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පෘෂ්ඨයට ඇලී ඇත"/>
+      <owl:allValuesFrom rdf:resource="#රයිබොසෝම"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#අන්තඃප්ලාස්මීය ජාලිකා">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#සිනිඳු අන්තඃප්ලාස්මීය ජාලිකා">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#සමන්විත වෙයි">
+  <rdfs:domain rdf:resource="#න්‍යෂ්ටිය"/>
+  <rdfs:range rdf:resource="#ක්‍රොමැටින් ද්‍රව්‍ය"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#ක්‍රොමැටින් ද්‍රව්‍ය">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පත්වේ"/>
+      <owl:allValuesFrom rdf:resource="#වර්ණදේහ"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#පත්වේ"/>
+      <owl:allValuesFrom rdf:resource="#වර්ණදේහ"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#පරිවහනය සිදුකරයි">
+  <rdfs:domain rdf:resource="#රළු අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:range rdf:resource="#ප්‍රෝටීන"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#ප්‍රෝටීන">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#පෘෂ්ඨයට ඇලී ඇත">
+  <rdfs:domain rdf:resource="#රළු අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:range rdf:resource="#රයිබොසෝම"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#පත්වේ">
+  <rdfs:domain rdf:resource="#ක්‍රොමැටින් ද්‍රව්‍ය"/>
+  <rdfs:range rdf:resource="#වර්ණදේහ"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#වර්ණදේහ">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+
+</rdf:RDF>

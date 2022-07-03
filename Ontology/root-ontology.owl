@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<rdf:RDF xml:base="file:C:/Users/Supun/PycharmProjects/Tagger2/Ontology/bio-ontology.owl"
+         xmlns="file:C:/Users/Supun/PycharmProjects/Tagger2/Ontology/bio-ontology.owl#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#">
+
+<owl:Class rdf:about="#රළු අන්තඃප්ලාස්මීය ජාලිකා">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#වර්ගයකි"/>
+      <owl:allValuesFrom rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:ObjectProperty rdf:about="#වර්ගයකි">
+  <rdfs:domain rdf:resource="#රළු අන්තඃප්ලාස්මීය ජාලිකා"/>
+  <rdfs:range rdf:resource="#අන්තඃප්ලාස්මීය ජාලිකා"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#අන්තඃප්ලාස්මීය ජාලිකා">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+
+</rdf:RDF>
